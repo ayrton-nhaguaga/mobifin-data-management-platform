@@ -1,0 +1,92 @@
+{
+  "synthetic": true,
+  "verification": "HTTP through frontend proxy to FastAPI and PostgreSQL",
+  "clients": 9661,
+  "transactions": 28815,
+  "facts": 28813,
+  "metrics": {
+    "completeness": {
+      "passed": 39801,
+      "denominator": 40000,
+      "percentage": 99.5025,
+      "target": 98,
+      "unit": "records"
+    },
+    "uniqueness": {
+      "passed": 39600,
+      "denominator": 40000,
+      "percentage": 99.0,
+      "target": 99,
+      "unit": "records"
+    },
+    "validity": {
+      "passed": 218030,
+      "denominator": 220000,
+      "percentage": 99.1045,
+      "target": 99.5,
+      "unit": "rule_value_checks"
+    },
+    "timeliness": {
+      "passed": 0,
+      "denominator": 1,
+      "percentage": 0.0,
+      "target": 99,
+      "unit": "report_deliveries"
+    },
+    "consistency": {
+      "passed": 0,
+      "denominator": 0,
+      "percentage": null,
+      "target": 100,
+      "unit": "financial_differences",
+      "reconciliations": 2,
+      "unexplained_differences": 0
+    }
+  },
+  "etl": [
+    {
+      "id": 4,
+      "batch_id": 2,
+      "loaded": 28815,
+      "rejected": 1185,
+      "duration_seconds": 18.609,
+      "reconciliation": [
+        {
+          "currency": "MZN",
+          "source": "241625491.94",
+          "warehouse": "241625491.94",
+          "difference": "0.00",
+          "justification": null
+        },
+        {
+          "currency": "USD",
+          "source": "1336080.00",
+          "warehouse": "1336080.00",
+          "difference": "0.00",
+          "justification": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "batch_id": 1,
+      "loaded": 1,
+      "rejected": 339,
+      "duration_seconds": 0.349,
+      "reconciliation": []
+    },
+    {
+      "id": 1,
+      "batch_id": 1,
+      "loaded": 9660,
+      "rejected": 340,
+      "duration_seconds": 59.981,
+      "reconciliation": []
+    }
+  ],
+  "daily_report_groups": 44,
+  "lineage_nodes_for_transaction": 8,
+  "lineage_edges_for_transaction": 7,
+  "record_trace_verified": true,
+  "audit_events": 19
+}
